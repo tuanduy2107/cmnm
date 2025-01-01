@@ -9,7 +9,7 @@ const colors = {
 
 const Login = () => {
     return (
-        <div className="w-full h-full flex items-start">
+        <div className="w-full h-screen flex items-start">
             <div className='relative w-1/2 h-full flex flex-col'>
                 {/* <div className='absolute top-[20%] left-[10%] flex flex-col'>
                     <h1 className='text-4x1 text-white font-bold my-4'>Turn Your Ideas into reality</h1>
@@ -44,7 +44,7 @@ const Login = () => {
                     </div>
 
                     <div className='w-full flex flex-col my-4'>
-                        <button className='w-full Itext-white my-2 font-semibold bg-[#060606] rounded-md p-4 text-center flex items-center justify-center'>
+                        <button className='w-full text-white my-2 font-semibold bg-[#060606] rounded-md p-4 text-center flex items-center justify-center'>
                             Login
                         </button>
                         <button className='w-full text-[#060606] my-2 font-semibold bg-white border-2 border-black rounded-md p-4 text-center flex items-center justify-center'>

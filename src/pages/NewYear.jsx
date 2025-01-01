@@ -14,6 +14,7 @@ import cmnmQuocLong from '../assets/cmnmQuocLong.jpg';
 import cmnmTangLoi from '../assets/cmnmTangLoi.jpg';
 import cmnmKimNguyen from '../assets/cmnmKimNguyen.jpg';
 import cmnmTuanPhuong from '../assets/cmnmTuanPhuong.jpg';
+import cmnmBaoTran from '../assets/cmnmBaoTran.jpg';
 import fireworksSound from '../assets/fireworks-close-29630.mp3';
 import nammoiSound from '../assets/nammoi.mp3'
 const GreetingForm = () => {
@@ -77,6 +78,10 @@ const GreetingForm = () => {
             case 'Tuấn Phương':
                 newGreeting = 'Chúc mừng năm mới, Tuấn Phương! Sự nhiệt huyết và tinh thần bền bỉ của em trong các chuyến đi cùng team luôn là nguồn động lực to lớn cho tất cả mọi người. Chúc em trong năm mới này sẽ nhanh chóng bình phục, tràn đầy sức khỏe và năng lượng để tiếp tục hành trình đáng nhớ cùng nhóm. Cảm ơn em vì đã luôn là một người em tận tâm, hết lòng vì tập thể và luôn mang lại sự ấm áp, tin tưởng cho mọi người xung quanh. Hy vọng năm mới sẽ mang đến cho em thật nhiều niềm vui, thành công và những khoảnh khắc hạnh phúc bên gia đình và bạn bè!';
                 newImageSrc = cmnmTuanPhuong;
+                break;
+            case 'Bảo Trân':
+                newGreeting = 'Chúc mừng năm mới, Bảo Trân! Một năm mới đã đến, mang theo những cơ hội mới, những thách thức mới và những trải nghiệm mới. Mày là người luôn biết cách tận hưởng cuộc sống, đối diện với mọi khó khăn một cách mạnh mẽ và kiên định. Chúc mày trong năm mới sẽ tiếp tục giữ vững niềm tin vào bản thân, không ngừng phấn đấu và vươn lên trong mọi lĩnh vực mà mày đam mê. Hy vọng rằng mày sẽ có thêm nhiều cơ hội để thể hiện bản thân, đồng thời nhận được sự trân trọng và yêu thương từ mọi người xung quanh. Cảm ơn mày vì đã luôn là người bạn đồng hành tuyệt vời, một người đồng đội thân thiết. Chúc mừng năm mới, chúc mày sẽ có một năm mới tràn đầy hạnh phúc, thành công và những niềm vui bất ngờ!';
+                newImageSrc = cmnmBaoTran;
                 break;
             default:
                 newGreeting = `Chúc mừng năm mới, ${selectedName}! Chúc mày một năm tràn đầy hạnh phúc và thành công!`;
@@ -156,6 +161,7 @@ const GreetingForm = () => {
                     <option value="Tăng Lợi">Tăng Lợi</option>
                     <option value="Kim Nguyên">Kim Nguyên</option>
                     <option value="Tuấn Phương">Tuấn Phương</option>
+                    <option value="Bảo Trân">Bảo Trân</option>
                 </select>
                 <button type="submit" className="bg-blue-500 text-white p-2 rounded">
                     Gửi

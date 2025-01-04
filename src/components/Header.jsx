@@ -1,16 +1,16 @@
 import React from "react";
-import logoDOP from '../assets/logo_dop.jpg';
+// import logoDOP from '../assets/logo_dop.jpg';
 
 const Header = () => {
     return (
         <header className="text-white fixed top-0 left-0 right-0 z-20 bg-transparent backdrop-blur-md">
             <div className="container mx-6 flex justify-between items-center py-4">
                 <div className="flex items-center space-x-4">
-                    <img
+                    {/* <img
                         src={logoDOP}
                         alt="Logo"
                         className="h-24 w-24"
-                    />
+                    /> */}
                     <span className="text-lg font-semibold text-black">Tổ chức DOP</span>
                 </div>
 

@@ -24,7 +24,7 @@ const LienHeVoiChungToi = () => {
                     className="w-80 p-3 border border-gray-300 rounded-l-md text-lg"
                 />
                 {/* <FaPaperPlane className="bg-green-500 text-white p-3 rounded-r-md hover:bg-green-600" /> */}
-                <button className="bg-blue-500 text-white p-5 rounded-r-md hover:bg-blue-600">
+                <button className="bg-[#25a5dd] text-white p-5 rounded-r-md hover:bg-[#186b8f]">
                     <FaPaperPlane />
                 </button>
             </div>

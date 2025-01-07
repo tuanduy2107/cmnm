@@ -1,5 +1,5 @@
 import HomePage6 from '../assets/HomePage6.jpg';
-import Logo from '../assets/logo_dop.jpg';
+import Logo from '../assets/DOP_logo.png';
 import { FaPaperPlane, FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa';
 
 const LienHeVoiChungToi = () => {
@@ -14,7 +14,7 @@ const LienHeVoiChungToi = () => {
             <h1 className="text-4xl font-bold text-center text-gray-800 mb-4">Liên hệ với chúng tôi</h1>
 
             {/* Dòng chữ "Đăng ký ngay để cập nhật..." */}
-            <p className="text-xl text-center text-black-600 mb-8">Đăng ký ngay để cập nhật nhiều thông tin mới nhất</p>
+            <p className="text-xl font-bold text-center text-black-600 mb-8">Đăng ký ngay để cập nhật nhiều thông tin mới nhất</p>
 
             {/* Khung nhập email */}
             <div className="flex justify-center mb-8">
@@ -24,13 +24,13 @@ const LienHeVoiChungToi = () => {
                     className="w-80 p-3 border border-gray-300 rounded-l-md text-lg"
                 />
                 {/* <FaPaperPlane className="bg-green-500 text-white p-3 rounded-r-md hover:bg-green-600" /> */}
-                <button className="bg-green-500 text-white p-5 rounded-r-md hover:bg-green-600">
+                <button className="bg-blue-500 text-white p-5 rounded-r-md hover:bg-blue-600">
                     <FaPaperPlane />
                 </button>
             </div>
 
             {/* Tabs */}
-            <div className="w-2/3 bg-pink-500 text-white py-4">
+            <div className="w-2/3 bg-[#FF641E] text-white py-4">
                 <ul className="flex justify-center space-x-8 text-lg font-semibold">
                     <li><a href="#" className="hover:text-gray-200">TRANG CHỦ</a></li>
                     <li><a href="#" className="hover:text-gray-200">VỀ CHÚNG TÔI</a></li>
@@ -42,13 +42,14 @@ const LienHeVoiChungToi = () => {
             </div>
 
             {/* Thông tin liên hệ */}
-            <div className=" w-2/3 bg-white grid grid-cols-1 lg:grid-cols-8">
-                <div className="h-72 bg-gray-200 lg:col-span-2">
-                    <img src={Logo} alt="Logo" className="w-full h-2/3 mx-auto" />
-                    <h3 className="font-semibold text-gray-800 text-center">© Dự án Hành trình nuôi chữ 2023</h3>
-                    <h3 className="font-semibold text-gray-800 text-center">All rights reserved</h3>
+            <div className=" w-2/3 bg-white grid grid-cols-1 lg:grid-cols-12">
+                <div className="h-72 bg-gray-200 lg:col-span-4 flex flex-col items-center justify-center">
+                    <img src={Logo} alt="Logo" className="w-80 h-auto mx-2 my-12" />
+                    <h3 className="font-semibold text-lg text-gray-800 text-center">© Dự án Hành trình nuôi chữ 2023</h3>
+                    <h3 className="font-semibold text-lg text-gray-800 text-center">All rights reserved</h3>
                 </div>
-                <div className="h-72 bg-pink-200 lg:col-span-6">
+
+                <div className="h-72 bg-[#FFC9B0] lg:col-span-8">
                     <div className="h-1/4 flex items-center">
                         <h3 className="text-2xl text-gray-800 font-semibold justify-start pl-8">
                             Tổ chức DOP

@@ -1,10 +1,10 @@
-import { useState, useEffect } from "react";
-import Header from "../components/Header";
+import { useState, useEffect, useRef } from "react";
+import Header from "../layouts/Header";
 import NhungConSoAnTuong from "../components/NhungConSoAnTuong";
 import CacChuongTrinhTieuBieu from "../components/CacChuongTrinhTieuBieu";
 import TinTuc from "../components/TinTuc";
 import LienHeVoiChungToi from "../components/LienHeVoiChungToi";
-
+import DoiTacDongHanh from "../components/DoiTacDongHanh";
 import HomePage1 from '../assets/HomePage1.jpg';
 import HomePage2 from '../assets/HomePage2.jpg';
 import HomePage3 from '../assets/HomePage3.jpg';
@@ -14,28 +14,32 @@ const images = [HomePage1, HomePage2, HomePage3];
 const Homepage = () => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-    // Hàm chuyển sang ảnh nền tiếp theo
+    const sectionsRef = useRef([]);
     const handleNextImage = () => {
         setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
     };
 
-    // Hàm chuyển sang ảnh nền trước đó
     const handlePrevImage = () => {
         setCurrentImageIndex(
             (prevIndex) => (prevIndex - 1 + images.length) % images.length
         );
     };
 
-    // Hàm cuộn đến phần tiếp theo
     const handleScroll = (event) => {
         event.preventDefault();
         const delta = Math.sign(event.deltaY);
-        const nextSection = window.scrollY + window.innerHeight * delta;
 
-        window.scrollTo({
-            top: nextSection,
-            behavior: 'smooth',
-        });
+        const currentSectionIndex = sectionsRef.current.findIndex(
+            (section) => Math.abs(section.getBoundingClientRect().top) < window.innerHeight / 2
+        );
+
+        const nextSectionIndex = Math.min(
+            Math.max(0, currentSectionIndex + delta),
+            sectionsRef.current.length - 1
+        );
+
+        const nextSection = sectionsRef.current[nextSectionIndex];
+        nextSection.scrollIntoView({ behavior: "smooth" });
     };
 
     useEffect(() => {
@@ -47,46 +51,60 @@ const Homepage = () => {
     }, []);
 
     return (
-        <div className="relative flex flex-col w-screen h-screen">
+        <div className="relative flex flex-col w-screen">
             {/* Header Component */}
-            {/* <Header /> */}
+            <div className="section" ref={(el) => (sectionsRef.current[0] = el)}>
+                <div className="flex flex-col items-center justify-center bg-white min-h-screen relative">
+                    <img
+                        src={images[currentImageIndex]}
+                        alt="Homepage"
+                        className="w-screen h-screen object-cover"
+                    />
+                </div>
 
-            {/* Phần hình ảnh đầy màn hình */}
-            <div className="flex flex-col items-center justify-center bg-white min-h-screen">
-                <img src={images[currentImageIndex]} alt="Homepage" className="w-full h-full object-cover" />
+                {/* Mũi tên trái */}
+                <button
+                    onClick={handlePrevImage}
+                    className="absolute top-1/2 left-1/4 transform -translate-y-1/2 px-4 py-2 bg-gray-500 text-white rounded-full hover:bg-gray-600 transition shadow-lg z-10"
+                >
+                    ádsadsadsads;
+                </button>
+
+                {/* Mũi tên phải */}
+                <button
+                    onClick={handleNextImage}
+                    className="absolute top-1/2 right-1/4 transform -translate-y-1/2 px-4 py-2 bg-gray-500 text-white rounded-full hover:bg-gray-600 transition shadow-lg z-10"
+                >
+                    &#8250;
+                </button>
+
             </div>
 
-            <button
-                onClick={handleNextImage}
-                className="absolute top-1/2 left-4 transform -translate-y-1/2 px-4 py-2 bg-gray-500 text-white rounded-full hover:bg-gray-600 transition shadow-lg z-10"
-            >
-                &#8249;
-            </button>
-
-            <button
-                onClick={handlePrevImage}
-                className="absolute top-1/2 right-4 transform -translate-y-1/2 px-4 py-2 bg-gray-500 text-white rounded-full hover:bg-gray-600 transition shadow-lg z-10"
-            >
-                &#8250;
-            </button>
-
             {/* Phần 2 - Những con số ấn tượng */}
-            <NhungConSoAnTuong />
+            <div className="section" ref={(el) => (sectionsRef.current[1] = el)}>
+                <NhungConSoAnTuong />
+            </div>
 
             {/* Phần 3 - Các chương trình tiêu biểu */}
-            <CacChuongTrinhTieuBieu />
+            <div className="section" ref={(el) => (sectionsRef.current[2] = el)}>
+                <CacChuongTrinhTieuBieu />
+            </div>
 
             {/* Phần 4 - Tin tức */}
-            <TinTuc />
+            <div className="section" ref={(el) => (sectionsRef.current[3] = el)}>
+                <TinTuc />
+            </div>
 
             {/* Phần 5 - Đối tác đồng hành */}
+            <div className="section" ref={(el) => (sectionsRef.current[4] = el)}>
+                <DoiTacDongHanh />
+            </div>
 
             {/* Phần 6 - Liên hệ với chúng tôi */}
-            <LienHeVoiChungToi />
-
-
+            <div className="section" ref={(el) => (sectionsRef.current[5] = el)}>
+                <LienHeVoiChungToi />
+            </div>
         </div>
-
     );
 };
 

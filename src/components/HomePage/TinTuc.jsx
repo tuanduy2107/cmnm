@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import HomePage6 from '../assets/HomePage6.jpg';
+import { useState } from 'react';
+import HomePage6 from '/src/assets/HomePage6.jpg';
 
 const TinTuc = () => {
     // Tạo state để theo dõi grid nào được hover
@@ -37,14 +37,14 @@ const TinTuc = () => {
                     <div
                         key={index}
                         className={`relative h-screen border border-white transition-all duration-300 p-4 flex flex-col items-center justify-center ${index == hoveredIndex
-                            ? 'bg-pink-400 opacity-60' : ''
+                            ? 'bg-[#f28a70] opacity-60' : ''
                             }`}
                         onMouseEnter={() => setHoveredIndex(index)}
                         onMouseLeave={() => setHoveredIndex(-1)}
                     >
                         {/* Nội dung hiển thị khi chưa hover */}
                         {index != hoveredIndex && (
-                            <div className="absolute bottom-0 w-full p-2 py-4 bg-black text-white text-center min-h-28">
+                            <div className="absolute bottom-0 w-full p-2 py-4 bg-[#ec4c24] text-white text-center min-h-28">
                                 <p className="text-lg font-bold">{item.date}</p>
                                 <p className="text-sm">{item.title}</p>
 

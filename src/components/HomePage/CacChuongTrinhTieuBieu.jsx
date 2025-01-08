@@ -1,4 +1,4 @@
-import HomePage5 from '../assets/HomePage5.jpg';
+import HomePage5 from '/src/assets/HomePage5.jpg';
 const CacChuongTrinhTieuBieu = () => {
     return (
         <div className="relative flex flex-col items-center justify-center bg-white min-h-screen z-10">
@@ -11,7 +11,7 @@ const CacChuongTrinhTieuBieu = () => {
 
             {/* Nội dung */}
             <div className="relative z-10 flex flex-col items-center text-center text-black px-6 pt-48">
-                <h2 className="text-4xl mb-12 tracking-wide">CÁC CHƯƠNG TRÌNH TIÊU BIỂU</h2>
+                <h2 className="text-4xl mb-12 font-bold tracking-wide">CÁC CHƯƠNG TRÌNH TIÊU BIỂU</h2>
 
                 {/* {/* Dùng flex để đẩy grid xuống dưới */}
                 <div className="flex flex-col justify-end w-full h-full">

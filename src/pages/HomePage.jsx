@@ -1,10 +1,10 @@
 import { useState, useEffect, useRef } from "react";
-import Header from "../layouts/Header";
-import NhungConSoAnTuong from "../components/NhungConSoAnTuong";
-import CacChuongTrinhTieuBieu from "../components/CacChuongTrinhTieuBieu";
-import TinTuc from "../components/TinTuc";
-import LienHeVoiChungToi from "../components/LienHeVoiChungToi";
-import DoiTacDongHanh from "../components/DoiTacDongHanh";
+// import Header from "../layouts/Header";
+import NhungConSoAnTuong from "../components/HomePage/NhungConSoAnTuong";
+import CacChuongTrinhTieuBieu from "../components/HomePage/CacChuongTrinhTieuBieu";
+import TinTuc from "../components/HomePage/TinTuc";
+import LienHeVoiChungToi from "../components/HomePage/LienHeVoiChungToi";
+import DoiTacDongHanh from "../components/HomePage/DoiTacDongHanh";
 import HomePage1 from '../assets/HomePage1.jpg';
 import HomePage2 from '../assets/HomePage2.jpg';
 import HomePage3 from '../assets/HomePage3.jpg';

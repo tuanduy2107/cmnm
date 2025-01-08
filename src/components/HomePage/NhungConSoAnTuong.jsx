@@ -1,5 +1,5 @@
-import HomePage4 from '../assets/HomePage4.jpg';
-import ConSoThongKe from '../assets/ConSoThongKe.jpg';
+import HomePage4 from '/src/assets/HomePage4.jpg';
+import ConSoThongKe from '/src/assets/ConSoThongKe.jpg';
 import CountUp from 'react-countup';
 import { useState, useEffect, useRef } from 'react';
 
@@ -50,25 +50,25 @@ const NhungConSoAnTuong = () => {
                         <h3 className="text-7xl font-bold text-[#FF641E]">
                             {hasStarted && <CountUp start={0} end={12} duration={3.5} />}
                         </h3>
-                        <p className="text-gray-600">EM TỐT NGHIỆP ĐẠI HỌC, CAO ĐẲNG (DỰ ÁN NGƯỜI ĐỠ ĐẦU)</p>
+                        <p className="text-black font-bold">EM TỐT NGHIỆP ĐẠI HỌC, CAO ĐẲNG (DỰ ÁN NGƯỜI ĐỠ ĐẦU)</p>
                     </div>
                     <div>
                         <h3 className="text-7xl font-bold text-[#FF641E]">
                             {hasStarted && <CountUp start={0} end={3} duration={3.5} />}
                         </h3>
-                        <p className="text-gray-600">EM THỤ HƯỞNG HỌC ĐẠI HỌC, CAO ĐẲNG (DỰ ÁN NGƯỜI ĐỠ ĐẦU)</p>
+                        <p className="text-black font-bold">EM THỤ HƯỞNG HỌC ĐẠI HỌC, CAO ĐẲNG (DỰ ÁN NGƯỜI ĐỠ ĐẦU)</p>
                     </div>
                     <div>
                         <h3 className="text-7xl font-bold text-[#FF641E]">
                             {hasStarted && <CountUp start={0} end={36} duration={3.5} />}
                         </h3>
-                        <p className="text-gray-600">EM THỤ HƯỞNG DỰ ÁN HÀNH TRÌNH NUÔI CHỮ</p>
+                        <p className="text-black font-bold">EM THỤ HƯỞNG DỰ ÁN HÀNH TRÌNH NUÔI CHỮ</p>
                     </div>
                     <div>
                         <h3 className="text-7xl font-bold text-[#FF641E]">
                             {hasStarted && <CountUp start={0} end={6} duration={3.5} />}
                         </h3>
-                        <p className="text-gray-600">MÙA CHIẾN DỊCH DOP ĐÃ THỰC HIỆN</p>
+                        <p className="text-black font-bold">MÙA CHIẾN DỊCH DOP ĐÃ THỰC HIỆN</p>
                     </div>
                 </div>
             </div>

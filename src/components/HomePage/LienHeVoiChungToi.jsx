@@ -1,5 +1,5 @@
-import HomePage6 from '../assets/HomePage6.jpg';
-import Logo from '../assets/DOP_logo.png';
+import HomePage6 from '/src/assets/HomePage6.jpg';
+import Logo from '/src/assets/DOP_logo.png';
 import { FaPaperPlane, FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa';
 
 const LienHeVoiChungToi = () => {

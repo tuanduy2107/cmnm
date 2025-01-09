@@ -32,8 +32,8 @@ const LienHeVoiChungToi = () => {
             {/* Tabs */}
             <div className="w-2/3 bg-[#FF641E] text-white py-4">
                 <ul className="flex justify-center space-x-8 text-lg font-semibold">
-                    <li><a href="#" className="hover:text-gray-200">TRANG CHỦ</a></li>
-                    <li><a href="#" className="hover:text-gray-200">VỀ CHÚNG TÔI</a></li>
+                    <li><a href="/" className="hover:text-gray-200">TRANG CHỦ</a></li>
+                    <li><a href="/about-us" className="hover:text-gray-200">VỀ CHÚNG TÔI</a></li>
                     <li><a href="#" className="hover:text-gray-200">CHƯƠNG TRÌNH MỤC TIÊU</a></li>
                     <li><a href="#" className="hover:text-gray-200">TRUYỀN THÔNG</a></li>
                     <li><a href="#" className="hover:text-gray-200">ĐỒNG HÀNH CÙNG DOP</a></li>

@@ -55,29 +55,27 @@ const Homepage = () => {
             {/* Header Component */}
             <div className="section" ref={(el) => (sectionsRef.current[0] = el)}>
                 <div className="flex flex-col items-center justify-center bg-white min-h-screen relative">
+                    {/* Mũi tên trái */}
+                    <button
+                        onClick={handlePrevImage}
+                        className="absolute top-1/2 left-8 transform -translate-y-1/2 px-4 py-2 bg-gray-500 text-white rounded-full hover:bg-gray-600 transition shadow-lg z-10"
+                    >
+                        &#8249;
+                    </button>
+
+                    {/* Mũi tên phải */}
+                    <button
+                        onClick={handleNextImage}
+                        className="absolute top-1/2 right-8 transform -translate-y-1/2 px-4 py-2 bg-gray-500 text-white rounded-full hover:bg-gray-600 transition shadow-lg z-10"
+                    >
+                        &#8250;
+                    </button>
                     <img
                         src={images[currentImageIndex]}
                         alt="Homepage"
                         className="w-screen h-screen object-cover"
                     />
                 </div>
-
-                {/* Mũi tên trái */}
-                <button
-                    onClick={handlePrevImage}
-                    className="absolute top-1/2 left-1/4 transform -translate-y-1/2 px-4 py-2 bg-gray-500 text-white rounded-full hover:bg-gray-600 transition shadow-lg z-10"
-                >
-                    ádsadsadsads;
-                </button>
-
-                {/* Mũi tên phải */}
-                <button
-                    onClick={handleNextImage}
-                    className="absolute top-1/2 right-1/4 transform -translate-y-1/2 px-4 py-2 bg-gray-500 text-white rounded-full hover:bg-gray-600 transition shadow-lg z-10"
-                >
-                    &#8250;
-                </button>
-
             </div>
 
             {/* Phần 2 - Những con số ấn tượng */}

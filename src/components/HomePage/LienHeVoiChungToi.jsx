@@ -1,15 +1,14 @@
 import HomePage6 from '/src/assets/HomePage6.jpg';
 import Logo from '/src/assets/DOP_logo.png';
-import { FaPaperPlane, FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa';
 
 const LienHeVoiChungToi = () => {
     return (
-        <div className="relative flex flex-col items-center justify-center bg-white min-h-screen z-10">
-            <img
+        <div className="relative flex flex-col items-center justify-center  min-h-screen z-10">
+            {/* <img
                 src={HomePage6}
                 alt="Homepage6"
                 className="absolute inset-0 w-full h-full object-cover opacity-60 -z-10"
-            />
+            /> */}
             {/* Tiêu đề */}
             <h1 className="text-4xl font-bold text-center text-gray-800 mb-4">Liên hệ với chúng tôi</h1>
 
@@ -23,21 +22,19 @@ const LienHeVoiChungToi = () => {
                     placeholder="Nhập email của bạn..."
                     className="w-80 p-3 border border-gray-300 rounded-l-md text-lg"
                 />
-                {/* <FaPaperPlane className="bg-green-500 text-white p-3 rounded-r-md hover:bg-green-600" /> */}
                 <button className="bg-[#25a5dd] text-white p-5 rounded-r-md hover:bg-[#186b8f]">
-                    <FaPaperPlane />
+                    <i className="fa fa-paper-plane" aria-hidden="true"></i>
                 </button>
             </div>
 
             {/* Tabs */}
             <div className="w-2/3 bg-[#FF641E] text-white py-4">
-                <ul className="flex justify-center space-x-8 text-lg font-semibold">
+                <ul className="flex justify-center space-x-14 text-lg font-semibold">
                     <li><a href="/" className="hover:text-gray-200">TRANG CHỦ</a></li>
                     <li><a href="/about-us" className="hover:text-gray-200">VỀ CHÚNG TÔI</a></li>
                     <li><a href="#" className="hover:text-gray-200">CHƯƠNG TRÌNH MỤC TIÊU</a></li>
                     <li><a href="#" className="hover:text-gray-200">TRUYỀN THÔNG</a></li>
                     <li><a href="#" className="hover:text-gray-200">ĐỒNG HÀNH CÙNG DOP</a></li>
-                    <li><a href="#" className="hover:text-gray-200">ỦNG HỘ</a></li>
                 </ul>
             </div>
 
@@ -71,16 +68,16 @@ const LienHeVoiChungToi = () => {
                         <p className="text-gray-700 mb-4">
                             <strong>Email:</strong> tochucdop@gmail.com
                         </p>
-                        <p className="text-gray-700 flex items-center space-x-2">
+                        <p className="text-gray-700 flex items-center space-x-4">
                             <strong>Kết nối qua mạng xã hội:</strong>
                             <a href="https://www.facebook.com/dreamofthepoor" target="_blank" rel="noopener noreferrer">
-                                <FaFacebook className="text-2xl" />
+                                <i className="fa fa-facebook fa-2x" aria-hidden="true"></i>
                             </a>
                             <a href="https://www.instagram.com/dream.of.the.poor" target="_blank" rel="noopener noreferrer">
-                                <FaInstagram className="text-2xl" />
+                                <i className="fa fa-instagram fa-2x" aria-hidden="true"></i>
                             </a>
                             <a href="https://www.youtube.com/channel/UCUpCJkgzIl1ja6oDOiQI1Qw" target="_blank" rel="noopener noreferrer">
-                                <FaYoutube className="text-2xl" />
+                                <i className="fa fa-youtube-play fa-2x" aria-hidden="true"></i>
                             </a>
                         </p>
                     </div>

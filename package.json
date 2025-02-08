@@ -15,6 +15,7 @@
     "@fortawesome/react-fontawesome": "^0.2.2",
     "canvas-confetti": "^1.9.3",
     "fireworks-js": "^2.10.8",
+    "gsap": "^3.12.7",
     "mdb-react-ui-kit": "^9.0.0",
     "react": "^18.3.1",
     "react-countup": "^6.5.3",

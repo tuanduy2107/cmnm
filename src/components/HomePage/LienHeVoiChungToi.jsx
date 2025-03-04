@@ -4,11 +4,11 @@ import Logo from '/src/assets/DOP_logo.png';
 const LienHeVoiChungToi = () => {
     return (
         <div className="relative flex flex-col items-center justify-center  min-h-screen z-10">
-            {/* <img
+            <img
                 src={HomePage6}
                 alt="Homepage6"
                 className="absolute inset-0 w-full h-full object-cover opacity-60 -z-10"
-            /> */}
+            />
             {/* Tiêu đề */}
             <h1 className="text-4xl font-bold text-center text-gray-800 mb-4">Liên hệ với chúng tôi</h1>
 
@@ -32,7 +32,7 @@ const LienHeVoiChungToi = () => {
                 <ul className="flex justify-center space-x-14 text-lg font-semibold">
                     <li><a href="/" className="hover:text-gray-200">TRANG CHỦ</a></li>
                     <li><a href="/about-us" className="hover:text-gray-200">VỀ CHÚNG TÔI</a></li>
-                    <li><a href="#" className="hover:text-gray-200">CHƯƠNG TRÌNH MỤC TIÊU</a></li>
+                    <li><a href="/campaign" className="hover:text-gray-200">CHƯƠNG TRÌNH MỤC TIÊU</a></li>
                     <li><a href="#" className="hover:text-gray-200">TRUYỀN THÔNG</a></li>
                     <li><a href="#" className="hover:text-gray-200">ĐỒNG HÀNH CÙNG DOP</a></li>
                 </ul>

@@ -6,7 +6,6 @@ const Login = () => {
                 <div className="w-1/2 relative flex flex-col justify-center items-center overflow-hidden rounded-tl-2xl rounded-bl-2xl">
                     <img src={LoginImg} alt="LoginImg" className="absolute inset-0 w-full h-full" />
                     <div className="relative z-10 text-white p-12">
-                        {/* <h2 className="text-3xl font-bold mb-2">Hello, Welcome!</h2> */}
                     </div>
                     <div className="absolute inset-0"></div>
                 </div>

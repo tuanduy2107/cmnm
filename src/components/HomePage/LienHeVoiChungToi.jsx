@@ -33,7 +33,7 @@ const LienHeVoiChungToi = () => {
                     <li><a href="/" className="hover:text-gray-200">TRANG CHỦ</a></li>
                     <li><a href="/about-us" className="hover:text-gray-200">VỀ CHÚNG TÔI</a></li>
                     <li><a href="/campaign" className="hover:text-gray-200">CHƯƠNG TRÌNH MỤC TIÊU</a></li>
-                    <li><a href="#" className="hover:text-gray-200">TRUYỀN THÔNG</a></li>
+                    <li><a href="/gallery" className="hover:text-gray-200">TRUYỀN THÔNG</a></li>
                     <li><a href="#" className="hover:text-gray-200">ĐỒNG HÀNH CÙNG DOP</a></li>
                 </ul>
             </div>

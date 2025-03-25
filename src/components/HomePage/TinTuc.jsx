@@ -32,11 +32,11 @@ const TinTuc = () => {
                 alt="Homepage6"
                 className="absolute inset-0 w-full h-full object-cover opacity-60 z-0"
             />
-            <div className="grid grid-cols-1 lg:grid-cols-4 w-full h-full">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 w-full h-full">
                 {grids.map((item, index) => (
                     <div
                         key={index}
-                        className={`relative h-screen border border-white transition-all duration-300 p-4 flex flex-col items-center justify-center ${index == hoveredIndex
+                        className={`relative h-80 sm:h-96 md:h-screen border border-white transition-all duration-300 p-4 flex flex-col items-center justify-center ${index == hoveredIndex
                             ? 'bg-[#f28a70] opacity-60' : ''
                             }`}
                         onMouseEnter={() => setHoveredIndex(index)}
@@ -47,7 +47,6 @@ const TinTuc = () => {
                             <div className="absolute bottom-0 w-full p-2 py-4 bg-[#ec4c24] text-white text-center min-h-28">
                                 <p className="text-lg font-bold">{item.date}</p>
                                 <p className="text-sm">{item.title}</p>
-
                             </div>
                         )}
 

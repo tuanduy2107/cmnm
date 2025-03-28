@@ -43,10 +43,10 @@ const Homepage = () => {
     };
 
     useEffect(() => {
-        window.addEventListener('wheel', handleScroll, { passive: false });
+        // window.addEventListener('wheel', handleScroll, { passive: false });
 
         return () => {
-            window.removeEventListener('wheel', handleScroll);
+            // window.removeEventListener('wheel', handleScroll);
         };
     }, []);
 

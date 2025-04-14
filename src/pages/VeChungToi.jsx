@@ -11,7 +11,7 @@ import BanDieuHanh from "/src/assets/BanDieuHanh.jpg";
 import BanQuanLy from "/src/assets/BanQuanLy.png";
 import BanQuanLy2 from "/src/assets/BanQuanLy2.png";
 import MucTieuPhatTrien from "/src/assets/MucTieuPhatTrien.png";
-
+import Header from "../layouts/Header";
 const AboutUsPage = () => {
 
     const sectionsRef = useRef([]);
@@ -58,6 +58,8 @@ const AboutUsPage = () => {
     }, []);
     return (
         <div className="relative flex flex-col w-screen">
+            {/* Header Component */}
+            <Header />
             {/*Poster Component */}
             <div className="section" ref={(el) => (sectionsRef.current[0] = el)}>
                 <div className="flex flex-col items-center justify-center bg-white min-h-screen relative">

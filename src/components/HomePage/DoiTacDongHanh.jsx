@@ -5,27 +5,30 @@ const partners = [
     { name: "Partner 3", logo: "/src/assets/partner3.png" },
     { name: "Partner 4", logo: "/src/assets/partner4.png" },
     { name: "Partner 5", logo: "/src/assets/partner5.png" },
+    { name: "Partner 3", logo: "/src/assets/partner3.png" },
+    { name: "Partner 4", logo: "/src/assets/partner4.png" },
+    { name: "Partner 5", logo: "/src/assets/partner5.png" },
 ];
 
 const Partners = () => {
     return (
         <div className="relative flex flex-col items-center justify-center bg-white min-h-screen z-10">
-            <div className="container mx-auto px-4">
+            <div className="mx-auto px-4">
                 <img
                     src={HomePage5}
                     alt="Homepage5"
-                    className="absolute inset-0 w-full h-full object-cover opacity-60 -z-10"
+                    className="absolute inset-0 w-full h-screen object-cover -z-10"
                 />
                 {/* Tiêu đề */}
-                <h1 className="text-5xl font-bold text-center text-white mb-8">
+                <h1 className="text-4xl sm:text-5xl font-bold text-center text-white mb-8">
                     Đối tác đồng hành
                 </h1>
-                <p className="text-2xl text-center text-white mb-12">
+                <p className="text-lg sm:text-2xl lg:text-2xl mx-6 text-center text-white mb-12">
                     Chúng tôi tự hào được đồng hành cùng những đối tác hàng đầu trong hành trình phát triển.
                 </p>
 
                 {/* Lưới đối tác */}
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 items-center justify-items-center bg-white opacity-75 rounded-2xl mx-48">
+                <div className="relative grid grid-cols-2 mx-8 sm:grid-cols-4 sm:mx-40 lg:grid-cols-6 gap-2 items-center justify-items-center bg-white opacity-75 rounded-2xl">
                     {partners.map((partner, index) => (
                         <a
                             key={index}

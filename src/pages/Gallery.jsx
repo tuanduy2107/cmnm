@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import BG from '../assets/SuMenh.jpg';
 import LienHeVoiChungToi from '../components/HomePage/LienHeVoiChungToi';
+import Header from "../layouts/Header";
 const categories = [
     {
         title: 'Lễ kỷ niệm và Chương trình nghệ thuật',
@@ -50,6 +51,7 @@ export default function GalleryPage() {
 
     return (
         <div className='bg-[#07212c] w-screen min-h-screen text-white text-center'>
+            <Header />
             <div className='flex flex-col items-center justify-center h-64 bg-[#0D2F39] relative opacity-90'>
                 <img src={BG} alt='Background' className='absolute inset-0 w-full h-64 opacity-40 object-cover -z-10' />
                 <div className='text-6xl text-white font-bold text-center'>TRUYỀN THÔNG</div>

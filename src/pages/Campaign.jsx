@@ -4,7 +4,7 @@ import LienHeVoiChungToi from '../components/HomePage/LienHeVoiChungToi';
 import BackGroundCampaign from '../assets/BackgroundCampaign.jpg';
 import sectionsData from '../data/chuon_trinh_du_an';
 import Card from '../components/Campaign/Card';
-
+import Header from "../layouts/Header";
 const Campaign = () => {
     const sectionsRef = useRef([]);
 
@@ -26,6 +26,9 @@ const Campaign = () => {
     return (
         <div className='relative flex flex-col w-screen'>
             {/* Header */}
+            <Header />
+
+            {/* Background */}
             <div className='section' ref={(el) => (sectionsRef.current[0] = el)}>
                 <div className='flex flex-col items-center justify-center min-h-screen bg-[#0D2F39] relative opacity-90'>
                     <img src={BackGroundCampaign} alt='Background' className='absolute inset-0 w-full h-full opacity-40 object-cover -z-10' />

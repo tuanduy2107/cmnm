@@ -14,7 +14,7 @@ const LienHeVoiChungToi = () => {
 
                 {/* Tiêu đề */}
                 <h1 className="absolute top-[25%] left-1/2 text-xl font-bold text-center text-white transform -translate-x-1/2 -translate-y-1/2 w-3/4 
-                sm:top-[20%] sm:text-4xl">
+                sm:top-[20%] sm:text-4xl lg:top-[15%] lg:text-5xl">
                     LIÊN HỆ VỚI CHÚNG TÔI
                 </h1>
 
@@ -38,9 +38,9 @@ const LienHeVoiChungToi = () => {
             </div>
 
             {/* Tabs và Thông tin liên hệ */}
-            <div className="absolute bottom-[0%] sm:bottom-[5%] left-1/2 transform -translate-x-1/2 w-full flex flex-col items-center">
+            <div className="absolute bottom-[0%] sm:bottom-[5%] lg:h-1/2 lg:bottom-[10%] left-1/2 transform -translate-x-1/2 w-full flex flex-col items-center">
                 {/* Tabs */}
-                <div className="w-screen sm:w-2/3 bg-[#FF641E] text-white py-4 overflow-x-auto scroll-smooth snap-x">
+                <div className="w-screen sm:w-2/3 lg:w-4/5 bg-[#FF641E] text-white py-4 overflow-x-auto scroll-smooth snap-x">
                     <ul className="flex justify-start sm:justify-center space-x-6 text-sm sm:text-lg sm:space-x-14 font-semibold whitespace-nowrap px-6">
                         <li className="snap-start"><a href="/" className="hover:text-gray-200">TRANG CHỦ</a></li>
                         <li className="snap-start"><a href="/about-us" className="hover:text-gray-200">VỀ CHÚNG TÔI</a></li>
@@ -51,9 +51,9 @@ const LienHeVoiChungToi = () => {
                 </div>
 
                 {/* Thông tin liên hệ */}
-                <div className="w-screen sm:w-2/3 bg-white grid grid-cols-1 sm:grid-cols-12">
-                    <div className="h-30 sm:h-full sm:col-span-4 bg-gray-200 flex flex-col items-center justify-center">
-                        <img src={Logo} alt="Logo" className="w-2/3 mx-2 my-12" />
+                <div className="w-screen sm:w-2/3 lg:w-4/5 lg:h-2/5 bg-white grid grid-cols-1 sm:grid-cols-12">
+                    <div className="sm:h-full sm:col-span-4 bg-gray-200 flex flex-col items-center justify-center">
+                        <img src={Logo} alt="Logo" className="w-2/3 mx-2 my-10 lg:my-0" />
                         <h3 className="font-semibold text-lg text-gray-800 text-center mt-8 hidden sm:block">
                             © Dự án Hành trình nuôi chữ 2023
                         </h3>
@@ -61,7 +61,7 @@ const LienHeVoiChungToi = () => {
                     </div>
 
                     <div className="bg-[#FFC9B0] sm:col-span-8">
-                        <div className="my-6 flex flex-col">
+                        <div className="my-6 lg:my-2 flex flex-col">
                             <h3 className="text-2xl text-gray-800 font-semibold">Tổ chức DOP</h3>
                         </div>
 
@@ -95,7 +95,7 @@ const LienHeVoiChungToi = () => {
                                 Let&apos;s make dreams come true!
                             </p>
                         </div>
-                        <div className="w-full px-2 py-6 text-center">
+                        <div className="w-full px-2 py-9 lg:py-6 text-center">
                             <p className="text-gray-700 sm:hidden font-bold">
                                 Let&apos;s make dreams come true!
                                 <h3 className="font-semibold text-lg text-gray-800 text-center mt-2">© Dự án Hành trình nuôi chữ 2023</h3>

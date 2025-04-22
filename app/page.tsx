@@ -6,21 +6,28 @@ import Link from "next/link"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-
+import homePage1 from "@/asset/home_page/homePage1.jpg"
+import homePage2 from "@/asset/home_page/homePage2.jpg"
+import homePage3 from "@/asset/home_page/homePage3.jpg"
+import AvatarCDD from "@/asset/cdd/Avatar.jpg"
+import AvatarNDD from "@/asset/ndd/AvatarNdd.jpg"
+import AvatarHTNC from "@/asset/htnc/AvatarHTNC.jpg"
+import AvatarDA from "@/asset/da/AvatarDA.jpg"
+import AvatarTT from "@/asset/tt/AvatarTT.jpg"
 // Slider images
 const sliderImages = [
   {
-    url: "/placeholder.svg?height=1080&width=1920",
+    url: homePage1,
     title: "Chào mừng đến với DOP",
     description: "Tổ chức hoạt động vì cộng đồng và phát triển bền vững",
   },
   {
-    url: "/placeholder.svg?height=1080&width=1920",
+    url: homePage2,
     title: "Chương trình CDD",
     description: "Phát triển cộng đồng bền vững",
   },
   {
-    url: "/placeholder.svg?height=1080&width=1920",
+    url: homePage3,
     title: "Chương trình NDD",
     description: "Nâng cao năng lực người dân địa phương",
   },
@@ -28,43 +35,43 @@ const sliderImages = [
 
 // Stats data
 const stats = [
-  { id: 1, value: "50+", label: "Dự án đã thực hiện" },
-  { id: 2, value: "1000+", label: "Người hưởng lợi" },
-  { id: 3, value: "20+", label: "Đối tác đồng hành" },
-  { id: 4, value: "5", label: "Năm hoạt động" },
+  { id: 1, value: "12", label: "EM TỐT NGHIỆP ĐẠI HỌC, CAO ĐẲNG" },
+  { id: 2, value: "03", label: "EM THỤ HƯỞNG HỌC ĐẠI HỌC, CAO ĐẲNG" },
+  { id: 3, value: "36", label: "DỰ ÁN HÀNH TRÌNH NUÔI CHỮ" },
+  { id: 4, value: "6", label: "MÙA CHIẾN DỊCH DOP" },
 ]
 
 // Programs data
 const programs = [
   {
     id: "cdd",
-    title: "CDD",
+    title: "Chiến dịch DOP",
     description: "Chương trình phát triển cộng đồng",
-    image: "/placeholder.svg?height=400&width=600",
+    image: AvatarCDD,
   },
   {
     id: "ndd",
-    title: "NDD",
+    title: "Người đỡ đầu",
     description: "Nâng cao năng lực người dân địa phương",
-    image: "/placeholder.svg?height=400&width=600",
+    image: AvatarNDD,
   },
   {
     id: "htnc",
-    title: "HTNC",
+    title: "Hành trình nuôi chữ",
     description: "Hỗ trợ người có hoàn cảnh khó khăn",
-    image: "/placeholder.svg?height=400&width=600",
+    image: AvatarHTNC,
   },
   {
     id: "da",
-    title: "ĐA",
+    title: "Đông ấm",
     description: "Dự án phát triển bền vững",
-    image: "/placeholder.svg?height=400&width=600",
+    image: AvatarDA,
   },
   {
     id: "tt",
-    title: "TT",
+    title: "Trăng sáng từ bao giờ?",
     description: "Truyền thông và nâng cao nhận thức",
-    image: "/placeholder.svg?height=400&width=600",
+    image: AvatarTT,
   },
 ]
 

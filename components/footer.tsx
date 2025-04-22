@@ -55,13 +55,13 @@ export default function Footer() {
               </div>
               <div className="flex items-center">
                 <Mail className="w-5 h-5 mr-2 text-[#ec4c24]" />
-                <span className="text-gray-300">contact@dop.org.vn</span>
+                <span className="text-gray-300">tochucdop@gmail.com</span>
               </div>
               <div className="mt-4">
                 <p className="text-gray-300 mb-2">Theo dõi chúng tôi:</p>
                 <div className="flex space-x-4">
                   <a
-                    href="https://facebook.com"
+                    href="https://www.facebook.com/dreamofthepoor"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-white hover:text-[#ec4c24] transition-colors"
@@ -94,7 +94,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} DOP Organization. All rights reserved.</p>
+          <p>&copy; Dự án Hành trình nuôi chữ 2023. All rights reserved.</p>
         </div>
       </div>
     </footer>

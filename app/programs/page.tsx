@@ -4,7 +4,12 @@ import { useState, useRef } from "react"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-
+import bulum2022 from "@/asset/cdd/bulum2022.JPG"
+import philote2023 from "@/asset/cdd/philote2023.JPG"
+import dakha2024 from "@/asset/cdd/dakha2024.JPG"
+import soni2024 from "@/asset/cdd/soni2024.JPG"
+import suoiphen2025 from "@/asset/cdd/suoiphen2025.JPG"
+import background from "@/asset/chuong_trinh/background.jpg"
 // Programs data
 const programs = [
   {
@@ -15,33 +20,33 @@ const programs = [
     image: "/placeholder.svg?height=600&width=1200",
     locations: [
       {
-        name: "Hà Nội",
+        name: "Bon Bu Lum",
         description:
           "Triển khai các dự án phát triển cộng đồng tại các huyện ngoại thành Hà Nội, tập trung vào cải thiện cơ sở hạ tầng và phát triển sinh kế.",
-        image: "/placeholder.svg?height=400&width=600",
+        image: bulum2022,
       },
       {
-        name: "Hồ Chí Minh",
+        name: "Bon Phi lơ te",
         description:
           "Các dự án tại TP.HCM tập trung vào phát triển kỹ năng cho thanh niên và hỗ trợ các doanh nghiệp nhỏ trong cộng đồng.",
-        image: "/placeholder.svg?height=400&width=600",
+        image: philote2023,
       },
       {
-        name: "Đà Nẵng",
+        name: "Thôn Đắkha",
         description:
           "Tại Đà Nẵng, chúng tôi triển khai các dự án bảo vệ môi trường và phát triển du lịch cộng đồng bền vững.",
-        image: "/placeholder.svg?height=400&width=600",
+        image: dakha2024,
       },
       {
-        name: "Cần Thơ",
+        name: "Bản Nam Sơni",
         description:
           "Các dự án tại Cần Thơ tập trung vào thích ứng với biến đổi khí hậu và phát triển nông nghiệp bền vững.",
-        image: "/placeholder.svg?height=400&width=600",
+        image: soni2024,
       },
       {
-        name: "Huế",
+        name: "Suối phèn",
         description: "Tại Huế, chúng tôi triển khai các dự án bảo tồn văn hóa và phát triển du lịch cộng đồng.",
-        image: "/placeholder.svg?height=400&width=600",
+        image: suoiphen2025,
       },
     ],
   },
@@ -162,7 +167,7 @@ export default function ProgramsPage() {
       {/* Hero Section */}
       <section className="relative h-[50vh] flex items-center">
         <div className="absolute inset-0 bg-[#0d3a4e]/70 z-10" />
-        <Image src="/placeholder.svg?height=800&width=1920" alt="DOP Programs" fill className="object-cover" />
+        <Image src={background} alt="DOP Programs" fill className="object-cover" />
         <div className="container mx-auto px-4 relative z-20 text-white">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Các chương trình của DOP</h1>
           <p className="text-xl max-w-2xl">
@@ -180,35 +185,35 @@ export default function ProgramsPage() {
               className="hover:bg-[#ddf1f9] hover:text-[#0d3a4e]"
               onClick={() => scrollToProgram("cdd")}
             >
-              CDD
+              Chiến dịch DOP
             </Button>
             <Button
               variant="ghost"
               className="hover:bg-[#ddf1f9] hover:text-[#0d3a4e]"
               onClick={() => scrollToProgram("ndd")}
             >
-              NDD
+              Người đỡ đầu
             </Button>
             <Button
               variant="ghost"
               className="hover:bg-[#ddf1f9] hover:text-[#0d3a4e]"
               onClick={() => scrollToProgram("htnc")}
             >
-              HTNC
+              Hành trình nuôi chữ
             </Button>
             <Button
               variant="ghost"
               className="hover:bg-[#ddf1f9] hover:text-[#0d3a4e]"
               onClick={() => scrollToProgram("da")}
             >
-              ĐA
+              Đông ấm
             </Button>
             <Button
               variant="ghost"
               className="hover:bg-[#ddf1f9] hover:text-[#0d3a4e]"
               onClick={() => scrollToProgram("tt")}
             >
-              TT
+              Trăng sáng từ bao giờ?
             </Button>
           </div>
         </div>

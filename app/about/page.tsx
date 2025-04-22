@@ -6,7 +6,7 @@ import { useRef } from "react"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-
+import background from "@/asset/ve_chung_toi/background.jpg"
 // Team data
 const founders = [
   {
@@ -76,7 +76,7 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="relative h-[50vh] flex items-center">
         <div className="absolute inset-0 bg-[#0d3a4e]/70 z-10" />
-        <Image src="/placeholder.svg?height=800&width=1920" alt="About DOP" fill className="object-cover" />
+        <Image src={background} alt="About DOP" fill className="object-cover" />
         <div className="container mx-auto px-4 relative z-20 text-white">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Về chúng tôi</h1>
           <p className="text-xl max-w-2xl">

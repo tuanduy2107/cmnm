@@ -4,12 +4,14 @@ import { useState, useRef } from "react"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
+
 import bulum2022 from "@/asset/cdd/bulum2022.jpg"
 import philote2023 from "@/asset/cdd/philote2023.jpg"
 import dakha2024 from "@/asset/cdd/dakha2024.jpg"
 import soni2024 from "@/asset/cdd/soni2024.jpg"
 import suoiphen2025 from "@/asset/cdd/suoiphen2025.jpg"
 import background from "@/asset/chuong_trinh/background.jpg"
+
 import AvatarCDD from "@/asset/cdd/Avatar.jpg"
 import AvatarNDD from "@/asset/ndd/AvatarNdd.jpg"
 import AvatarHTNC from "@/asset/htnc/AvatarHTNC.jpg"
@@ -25,33 +27,33 @@ const programs = [
     image: AvatarCDD,
     locations: [
       {
-        name: "Hà Nội",
+        name: "Bon Bulum",
         description:
           "Triển khai các dự án phát triển cộng đồng tại các huyện ngoại thành Hà Nội, tập trung vào cải thiện cơ sở hạ tầng và phát triển sinh kế.",
-        image: "/placeholder.svg?height=400&width=600",
+        image: bulum2022,
       },
       {
-        name: "Hồ Chí Minh",
+        name: "Bon Phi lơ te",
         description:
           "Các dự án tại TP.HCM tập trung vào phát triển kỹ năng cho thanh niên và hỗ trợ các doanh nghiệp nhỏ trong cộng đồng.",
-        image: "/placeholder.svg?height=400&width=600",
+        image: philote2023,
       },
       {
-        name: "Đà Nẵng",
+        name: "Thôn Đắk ha",
         description:
           "Tại Đà Nẵng, chúng tôi triển khai các dự án bảo vệ môi trường và phát triển du lịch cộng đồng bền vững.",
-        image: "/placeholder.svg?height=400&width=600",
+        image: dakha2024,
       },
       {
-        name: "Cần Thơ",
+        name: "Bản Nam Sơni",
         description:
           "Các dự án tại Cần Thơ tập trung vào thích ứng với biến đổi khí hậu và phát triển nông nghiệp bền vững.",
-        image: "/placeholder.svg?height=400&width=600",
+        image: soni2024,
       },
       {
-        name: "Huế",
+        name: "Suối Phèn",
         description: "Tại Huế, chúng tôi triển khai các dự án bảo tồn văn hóa và phát triển du lịch cộng đồng.",
-        image: "/placeholder.svg?height=400&width=600",
+        image: suoiphen2025,
       },
     ],
   },
@@ -172,7 +174,7 @@ export default function ProgramsPage() {
       {/* Hero Section */}
       <section className="relative h-[50vh] flex items-center">
         <div className="absolute inset-0 bg-[#0d3a4e]/70 z-10" />
-        <Image src="/placeholder.svg?height=800&width=1920" alt="DOP Programs" fill className="object-cover" />
+        <Image src={background} alt="DOP Programs" fill className="object-cover" />
         <div className="container mx-auto px-4 relative z-20 text-white">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Các chương trình của DOP</h1>
           <p className="text-xl max-w-2xl">

@@ -26,17 +26,17 @@ import doi_tac_6 from "@/asset/doi_tac/doi_tac_6.jpg"
 // Slider images
 const sliderImages = [
   {
-    url: "/placeholder.svg?height=1080&width=1920",
+    url: homePage1,
     title: "Chào mừng đến với DOP",
     description: "Tổ chức hoạt động vì cộng đồng và phát triển bền vững",
   },
   {
-    url: "/placeholder.svg?height=1080&width=1920",
+    url: homePage2,
     title: "Chương trình CDD",
     description: "Phát triển cộng đồng bền vững",
   },
   {
-    url: "/placeholder.svg?height=1080&width=1920",
+    url: homePage3,
     title: "Chương trình NDD",
     description: "Nâng cao năng lực người dân địa phương",
   },
@@ -56,31 +56,31 @@ const programs = [
     id: "cdd",
     title: "CDD",
     description: "Chương trình phát triển cộng đồng",
-    image: "/placeholder.svg?height=400&width=600",
+    image: AvatarCDD,
   },
   {
     id: "ndd",
     title: "NDD",
     description: "Nâng cao năng lực người dân địa phương",
-    image: "/placeholder.svg?height=400&width=600",
+    image: AvatarNDD,
   },
   {
     id: "htnc",
     title: "HTNC",
     description: "Hỗ trợ người có hoàn cảnh khó khăn",
-    image: "/placeholder.svg?height=400&width=600",
+    image: AvatarHTNC,
   },
   {
     id: "da",
     title: "ĐA",
     description: "Dự án phát triển bền vững",
-    image: "/placeholder.svg?height=400&width=600",
+    image: AvatarDA,
   },
   {
     id: "tt",
     title: "TT",
     description: "Truyền thông và nâng cao nhận thức",
-    image: "/placeholder.svg?height=400&width=600",
+    image: AvatarTT,
   },
 ]
 

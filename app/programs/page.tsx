@@ -25,33 +25,33 @@ const programs = [
     image: AvatarCDD,
     locations: [
       {
-        name: "Bon Bu Lum",
+        name: "Hà Nội",
         description:
           "Triển khai các dự án phát triển cộng đồng tại các huyện ngoại thành Hà Nội, tập trung vào cải thiện cơ sở hạ tầng và phát triển sinh kế.",
-        image: bulum2022,
+        image: "/placeholder.svg?height=400&width=600",
       },
       {
-        name: "Bon Phi lơ te",
+        name: "Hồ Chí Minh",
         description:
           "Các dự án tại TP.HCM tập trung vào phát triển kỹ năng cho thanh niên và hỗ trợ các doanh nghiệp nhỏ trong cộng đồng.",
-        image: philote2023,
+        image: "/placeholder.svg?height=400&width=600",
       },
       {
-        name: "Thôn Đắkha",
+        name: "Đà Nẵng",
         description:
           "Tại Đà Nẵng, chúng tôi triển khai các dự án bảo vệ môi trường và phát triển du lịch cộng đồng bền vững.",
-        image: dakha2024,
+        image: "/placeholder.svg?height=400&width=600",
       },
       {
-        name: "Bản Nam Sơni",
+        name: "Cần Thơ",
         description:
           "Các dự án tại Cần Thơ tập trung vào thích ứng với biến đổi khí hậu và phát triển nông nghiệp bền vững.",
-        image: soni2024,
+        image: "/placeholder.svg?height=400&width=600",
       },
       {
-        name: "Suối phèn",
+        name: "Huế",
         description: "Tại Huế, chúng tôi triển khai các dự án bảo tồn văn hóa và phát triển du lịch cộng đồng.",
-        image: suoiphen2025,
+        image: "/placeholder.svg?height=400&width=600",
       },
     ],
   },
@@ -172,7 +172,7 @@ export default function ProgramsPage() {
       {/* Hero Section */}
       <section className="relative h-[50vh] flex items-center">
         <div className="absolute inset-0 bg-[#0d3a4e]/70 z-10" />
-        <Image src={background} alt="DOP Programs" fill className="object-cover" />
+        <Image src="/placeholder.svg?height=800&width=1920" alt="DOP Programs" fill className="object-cover" />
         <div className="container mx-auto px-4 relative z-20 text-white">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Các chương trình của DOP</h1>
           <p className="text-xl max-w-2xl">
@@ -190,35 +190,35 @@ export default function ProgramsPage() {
               className="hover:bg-[#ddf1f9] hover:text-[#0d3a4e]"
               onClick={() => scrollToProgram("cdd")}
             >
-              Chiến dịch DOP
+              CDD
             </Button>
             <Button
               variant="ghost"
               className="hover:bg-[#ddf1f9] hover:text-[#0d3a4e]"
               onClick={() => scrollToProgram("ndd")}
             >
-              Người đỡ đầu
+              NDD
             </Button>
             <Button
               variant="ghost"
               className="hover:bg-[#ddf1f9] hover:text-[#0d3a4e]"
               onClick={() => scrollToProgram("htnc")}
             >
-              Hành trình nuôi chữ
+              HTNC
             </Button>
             <Button
               variant="ghost"
               className="hover:bg-[#ddf1f9] hover:text-[#0d3a4e]"
               onClick={() => scrollToProgram("da")}
             >
-              Đông ấm
+              ĐA
             </Button>
             <Button
               variant="ghost"
               className="hover:bg-[#ddf1f9] hover:text-[#0d3a4e]"
               onClick={() => scrollToProgram("tt")}
             >
-              Trăng sáng từ bao giờ?
+              TT
             </Button>
           </div>
         </div>

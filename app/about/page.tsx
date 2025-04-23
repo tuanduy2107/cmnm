@@ -84,7 +84,7 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="relative h-[50vh] flex items-center">
         <div className="absolute inset-0 bg-[#0d3a4e]/70 z-10" />
-        <Image src={background} alt="About DOP" fill className="object-cover" />
+        <Image src="/placeholder.svg?height=800&width=1920" alt="About DOP" fill className="object-cover" />
         <div className="container mx-auto px-4 relative z-20 text-white">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Về chúng tôi</h1>
           <p className="text-xl max-w-2xl">

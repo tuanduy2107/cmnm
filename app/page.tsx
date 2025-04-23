@@ -26,17 +26,17 @@ import doi_tac_6 from "@/asset/doi_tac/doi_tac_6.jpg"
 // Slider images
 const sliderImages = [
   {
-    url: homePage1,
+    url: "/placeholder.svg?height=1080&width=1920",
     title: "Chào mừng đến với DOP",
     description: "Tổ chức hoạt động vì cộng đồng và phát triển bền vững",
   },
   {
-    url: homePage2,
+    url: "/placeholder.svg?height=1080&width=1920",
     title: "Chương trình CDD",
     description: "Phát triển cộng đồng bền vững",
   },
   {
-    url: homePage3,
+    url: "/placeholder.svg?height=1080&width=1920",
     title: "Chương trình NDD",
     description: "Nâng cao năng lực người dân địa phương",
   },
@@ -44,43 +44,43 @@ const sliderImages = [
 
 // Stats data
 const stats = [
-  { id: 1, value: "12", label: "EM TỐT NGHIỆP ĐẠI HỌC, CAO ĐẲNG" },
-  { id: 2, value: "03", label: "EM THỤ HƯỞNG HỌC ĐẠI HỌC, CAO ĐẲNG" },
-  { id: 3, value: "36", label: "DỰ ÁN HÀNH TRÌNH NUÔI CHỮ" },
-  { id: 4, value: "6", label: "MÙA CHIẾN DỊCH DOP" },
+  { id: 1, value: "50+", label: "Dự án đã thực hiện" },
+  { id: 2, value: "1000+", label: "Người hưởng lợi" },
+  { id: 3, value: "20+", label: "Đối tác đồng hành" },
+  { id: 4, value: "5", label: "Năm hoạt động" },
 ]
 
 // Programs data
 const programs = [
   {
     id: "cdd",
-    title: "Chiến dịch DOP",
+    title: "CDD",
     description: "Chương trình phát triển cộng đồng",
-    image: AvatarCDD,
+    image: "/placeholder.svg?height=400&width=600",
   },
   {
     id: "ndd",
-    title: "Người đỡ đầu",
+    title: "NDD",
     description: "Nâng cao năng lực người dân địa phương",
-    image: AvatarNDD,
+    image: "/placeholder.svg?height=400&width=600",
   },
   {
     id: "htnc",
-    title: "Hành trình nuôi chữ",
+    title: "HTNC",
     description: "Hỗ trợ người có hoàn cảnh khó khăn",
-    image: AvatarHTNC,
+    image: "/placeholder.svg?height=400&width=600",
   },
   {
     id: "da",
-    title: "Đông ấm",
+    title: "ĐA",
     description: "Dự án phát triển bền vững",
-    image: AvatarDA,
+    image: "/placeholder.svg?height=400&width=600",
   },
   {
     id: "tt",
-    title: "Trăng sáng từ bao giờ?",
+    title: "TT",
     description: "Truyền thông và nâng cao nhận thức",
-    image: AvatarTT,
+    image: "/placeholder.svg?height=400&width=600",
   },
 ]
 

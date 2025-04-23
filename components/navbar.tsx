@@ -3,8 +3,9 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Menu, X } from "lucide-react"
+import { Menu, X, User } from "lucide-react"
 import { cn } from "@/lib/utils"
+import { Button } from "@/components/ui/button"
 
 const routes = [
   { name: "Trang chủ", path: "/" },
@@ -45,25 +46,41 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex space-x-8">
-          {routes.map((route) => (
-            <Link
-              key={route.path}
-              href={route.path}
-              className={cn(
-                "text-white hover:text-[#ec4c24] transition-colors",
-                pathname === route.path && "text-[#ec4c24] font-semibold",
-              )}
-            >
-              {route.name}
-            </Link>
-          ))}
+        <div className="hidden md:flex items-center">
+          <div className="flex space-x-8 mr-8">
+            {routes.map((route) => (
+              <Link
+                key={route.path}
+                href={route.path}
+                className={cn(
+                  "text-white hover:text-[#ec4c24] transition-colors",
+                  pathname === route.path && "text-[#ec4c24] font-semibold",
+                )}
+              >
+                {route.name}
+              </Link>
+            ))}
+          </div>
+          <Link href="/auth/login">
+            <Button variant="outline" className="border-white text-white hover:bg-white hover:text-[#07212c]">
+              <User className="mr-2 h-4 w-4" />
+              Đăng nhập
+            </Button>
+          </Link>
         </div>
 
         {/* Mobile Navigation Toggle */}
-        <button className="md:hidden text-white" onClick={() => setIsOpen(!isOpen)}>
-          {isOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        <div className="md:hidden flex items-center space-x-4">
+          <Link href="/auth/login">
+            <Button variant="outline" size="sm" className="border-white text-white hover:bg-white hover:text-[#07212c]">
+              <User className="h-4 w-4" />
+              <span className="sr-only">Đăng nhập</span>
+            </Button>
+          </Link>
+          <button className="text-white" onClick={() => setIsOpen(!isOpen)}>
+            {isOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Navigation Menu */}

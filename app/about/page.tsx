@@ -7,28 +7,36 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import background from "@/asset/ve_chung_toi/background.jpg"
+import co_cau_tro_chuc from "@/asset/ve_chung_toi/co_cau_to_chuc.jpg"
+import gia_tri_cot_loi from "@/asset/ve_chung_toi/gia_tri_cot_loi.jpg"
+import muc_tieu from "@/asset/ve_chung_toi/muc_tieu.jpg"
+import sang_lap_1 from "@/asset/ve_chung_toi/sang_lap_1.jpg"
+import sang_lap_2 from "@/asset/ve_chung_toi/sang_lap_2.jpg"
+import sang_lap_3 from "@/asset/ve_chung_toi/sang_lap_3.jpg"
+import su_menh from "@/asset/ve_chung_toi/su_menh.jpg"
+import tam_nhin from "@/asset/ve_chung_toi/tam_nhin.jpg"
 // Team data
 const founders = [
   {
     id: 1,
-    name: "Nguyễn Văn A",
+    name: "Phạm Thọ Quốc Long",
     role: "Nhà sáng lập & Chủ tịch",
-    image: "/placeholder.svg?height=400&width=400",
-    bio: "Với hơn 15 năm kinh nghiệm trong lĩnh vực phát triển cộng đồng, ông A đã sáng lập DOP với mong muốn tạo ra những thay đổi tích cực cho xã hội.",
+    image: sang_lap_1,
+    bio: "Với hơn 15 năm kinh nghiệm trong lĩnh vực phát triển cộng đồng, anh Long đã sáng lập DOP với mong muốn tạo ra những thay đổi tích cực cho xã hội.",
   },
   {
     id: 2,
-    name: "Trần Thị B",
+    name: "Trương Thiên Kim Nguyên",
     role: "Đồng sáng lập & Giám đốc điều hành",
-    image: "/placeholder.svg?height=400&width=400",
-    bio: "Bà B có chuyên môn sâu về quản lý dự án phát triển và đã có nhiều đóng góp quan trọng trong việc xây dựng các chương trình của DOP.",
+    image: sang_lap_2,
+    bio: "Chị Nguyên có chuyên môn sâu về quản lý dự án phát triển và đã có nhiều đóng góp quan trọng trong việc xây dựng các chương trình của DOP.",
   },
   {
     id: 3,
-    name: "Lê Văn C",
+    name: "Tăng Vĩnh Lợi",
     role: "Đồng sáng lập & Giám đốc tài chính",
-    image: "/placeholder.svg?height=400&width=400",
-    bio: "Ông C có hơn 10 năm kinh nghiệm trong lĩnh vực tài chính và quản lý nguồn lực, giúp DOP sử dụng hiệu quả các nguồn lực để tạo tác động lớn nhất.",
+    image: sang_lap_3,
+    bio: "Anh Lợi có hơn 10 năm kinh nghiệm trong lĩnh vực tài chính và quản lý nguồn lực, giúp DOP sử dụng hiệu quả các nguồn lực để tạo tác động lớn nhất.",
   },
 ]
 
@@ -152,7 +160,7 @@ export default function AboutPage() {
               <Button className="bg-[#ec4c24] hover:bg-[#bd3d1c]">Tìm hiểu thêm</Button>
             </div>
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
-              <Image src="/placeholder.svg?height=800&width=1200" alt="Sứ mệnh DOP" fill className="object-cover" />
+              <Image src={su_menh} alt="Sứ mệnh DOP" fill className="object-cover" />
             </div>
           </div>
         </div>
@@ -164,7 +172,7 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1 relative h-[400px] rounded-lg overflow-hidden shadow-xl">
               <Image
-                src="/placeholder.svg?height=800&width=1200"
+                src= {gia_tri_cot_loi}
                 alt="Giá trị cốt lõi DOP"
                 fill
                 className="object-cover"
@@ -209,7 +217,7 @@ export default function AboutPage() {
           <div className="text-center max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-6 text-[#0d3a4e]">Tầm nhìn</h2>
             <div className="relative h-[300px] rounded-lg overflow-hidden shadow-xl mb-8">
-              <Image src="/placeholder.svg?height=600&width=1200" alt="Tầm nhìn DOP" fill className="object-cover" />
+              <Image src= {tam_nhin} alt="Tầm nhìn DOP" fill className="object-cover" />
             </div>
             <p className="text-lg mb-6 text-gray-700">
               DOP hướng tới một xã hội công bằng, nơi mọi người đều có cơ hội phát triển và đóng góp vào sự tiến bộ
@@ -276,7 +284,7 @@ export default function AboutPage() {
               </ul>
             </div>
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
-              <Image src="/placeholder.svg?height=800&width=1200" alt="Mục tiêu DOP" fill className="object-cover" />
+              <Image src = {muc_tieu} alt="Mục tiêu DOP" fill className="object-cover" />
             </div>
           </div>
         </div>
@@ -310,7 +318,7 @@ export default function AboutPage() {
           <div className="max-w-4xl mx-auto">
             <div className="relative h-[300px] rounded-lg overflow-hidden shadow-xl mb-12">
               <Image
-                src="/placeholder.svg?height=600&width=1200"
+                src= {co_cau_tro_chuc}
                 alt="Cơ cấu tổ chức DOP"
                 fill
                 className="object-cover"

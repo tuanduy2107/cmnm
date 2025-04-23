@@ -10,14 +10,19 @@ import dakha2024 from "@/asset/cdd/dakha2024.JPG"
 import soni2024 from "@/asset/cdd/soni2024.JPG"
 import suoiphen2025 from "@/asset/cdd/suoiphen2025.JPG"
 import background from "@/asset/chuong_trinh/background.jpg"
+import AvatarCDD from "@/asset/cdd/Avatar.jpg"
+import AvatarNDD from "@/asset/ndd/AvatarNdd.jpg"
+import AvatarHTNC from "@/asset/htnc/AvatarHTNC.jpg"
+import AvatarDA from "@/asset/da/AvatarDA.jpg"
+import AvatarTT from "@/asset/tt/AvatarTT.jpg"
 // Programs data
 const programs = [
   {
     id: "cdd",
-    title: "CDD - Chương trình phát triển cộng đồng",
+    title: "Chiến dịch DOP",
     description:
-      "Chương trình CDD tập trung vào việc phát triển cộng đồng bền vững thông qua các dự án cải thiện cơ sở hạ tầng, nâng cao năng lực và thúc đẩy sinh kế địa phương.",
-    image: "/placeholder.svg?height=600&width=1200",
+      "Chiến dịch DOP là một hoạt động thường niên do Tổ chức Giáo dục và Phát triển Cộng đồng (DOP) thực hiện, nhằm hỗ trợ giáo dục và phát triển kỹ năng sống cho trẻ em tại các khu vực khó khăn, đặc biệt là vùng sâu, vùng xa. Mỗi năm, chiến dịch mang một chủ đề riêng, phản ánh mục tiêu và tinh thần của chương trình trong năm đó.",
+    image: AvatarCDD,
     locations: [
       {
         name: "Bon Bu Lum",
@@ -52,65 +57,65 @@ const programs = [
   },
   {
     id: "ndd",
-    title: "NDD - Nâng cao năng lực người dân địa phương",
+    title: "Người đỡ đầu",
     description:
-      "Chương trình NDD tập trung vào việc nâng cao năng lực cho người dân địa phương thông qua các khóa đào tạo kỹ năng, hỗ trợ khởi nghiệp và tạo cơ hội việc làm.",
-    image: "/placeholder.svg?height=600&width=1200",
+      "Nhằm thực hiện sứ mệnh lan tỏa những điều tích cực đến xã hội, dự án Người đỡ đầu của Tổ chức DOP ra đời với mong muốn đồng hành và hỗ trợ những bạn trẻ trên con đường Đại học, Cao đẳng và học nghề. Trải qua hai khóa dự án, dẫu còn gặp một số vấn đề trong quá trình vận hành, Người đỡ đầu vẫn gặt về những thành quả tốt đẹp nhờ sự chung tay của Cộng đồng, sự nỗ lực không ngừng của các bạn thụ hưởng.",
+    image: AvatarNDD,
     locations: [],
   },
   {
     id: "htnc",
-    title: "HTNC - Hỗ trợ người có hoàn cảnh khó khăn",
+    title: "Hành trình nuôi chữ",
     description:
-      "Chương trình HTNC cung cấp hỗ trợ cho những người có hoàn cảnh khó khăn, bao gồm trẻ em, người già, người khuyết tật và các nhóm dễ bị tổn thương khác.",
-    image: "/placeholder.svg?height=600&width=1200",
+      "Dự án Hành trình nuôi chữ là một sáng kiến giáo dục do Tổ chức DOP khởi xướng, nhằm mang lại cơ hội học tập cho trẻ em ở những khu vực mà điều kiện kinh tế và cơ sở hạ tầng còn nhiều hạn chế. Với mong muốn giúp các em nhỏ không chỉ biết đọc, biết viết mà còn có nền tảng kiến thức vững chắc để xây dựng tương lai, dự án hỗ trợ giáo dục bằng nhiều hình thức khác nhau: cung cấp tài liệu học tập, xây dựng lớp học và tổ chức các hoạt động ngoại khóa.",
+    image: AvatarHTNC,
     locations: [
       {
-        name: "Hà Giang",
+        name: "Thôn Bãi Trâu 3",
         description:
-          "Tại Hà Giang, chúng tôi hỗ trợ trẻ em vùng cao thông qua các dự án xây dựng trường học và cung cấp học bổng.",
-        image: "/placeholder.svg?height=400&width=600",
+          "Dự án Hành trình nuôi chữ 2022 diễn ra tại Bãi Trâu 3, nơi có nhiều trẻ em chưa được tiếp cận với giáo dục chính quy.",
+        image: bulum2022,
       },
       {
-        name: "Quảng Nam",
+        name: "Bon Phi lơ te",
         description:
-          "Các dự án tại Quảng Nam tập trung vào hỗ trợ người già và người khuyết tật thông qua các dịch vụ chăm sóc và hỗ trợ sinh kế.",
-        image: "/placeholder.svg?height=400&width=600",
+          "Dự án Hành trình nuôi chữ 2023 tại Bon Phi lơ te tập trung vào việc cung cấp tài liệu học tập và tổ chức các hoạt động ngoại khóa.",
+        image: philote2023,
       },
       {
-        name: "Bình Định",
+        name: "Bon Bulum",
         description:
-          "Tại Bình Định, chúng tôi triển khai các dự án hỗ trợ phục hồi sau thiên tai và xây dựng khả năng chống chịu cho cộng đồng.",
-        image: "/placeholder.svg?height=400&width=600",
+          "Dự án Hành trình nuôi chữ 2024 diễn ra tại Bon Bu Lum, nơi có nhiều trẻ em chưa được tiếp cận với giáo dục chính quy.",
+        image: bulum2022,
       },
       {
-        name: "Cà Mau",
+        name: "Bản Nam Sơni",
         description:
-          "Các dự án tại Cà Mau tập trung vào hỗ trợ ngư dân và gia đình họ thông qua đào tạo kỹ năng và cải thiện điều kiện sống.",
-        image: "/placeholder.svg?height=400&width=600",
+            "Dự án Hành trình nuôi chữ 2024 tại Bản Nam Sơni tập trung vào việc cung cấp tài liệu học tập và tổ chức các hoạt động ngoại khóa.",
+        image: soni2024,
       },
       {
-        name: "Kon Tum",
+        name: "Suối Phèn",
         description:
-          "Tại Kon Tum, chúng tôi hỗ trợ các cộng đồng dân tộc thiểu số thông qua các dự án giáo dục và y tế.",
-        image: "/placeholder.svg?height=400&width=600",
+          "Dự án Hành trình nuôi chữ 2025 diễn ra tại Suối Phèn, nơi có nhiều trẻ em chưa được tiếp cận với giáo dục chính quy.",
+        image: suoiphen2025,
       },
     ],
   },
   {
     id: "da",
-    title: "ĐA - Dự án phát triển bền vững",
+    title: "Đông ấm",
     description:
-      "Chương trình ĐA tập trung vào các dự án phát triển bền vững, bao gồm bảo vệ môi trường, năng lượng tái tạo và thích ứng với biến đổi khí hậu.",
-    image: "/placeholder.svg?height=600&width=1200",
+      "Đông Ấm là chương trình thường niên Tổ chức DOP thực hiện vào mỗi cuối năm, nhằm khảo sát các điểm bản dự kiến tổ chức Chiến dịch DOP năm tiếp theo. Đây cũng là dịp để DOP mang áo ấm, mền, khăn len và những món quà nho nhỏ dành tặng cho các em nhỏ và người dân tại bản làng xa xôi.",
+    image: AvatarDA,
     locations: [],
   },
   {
     id: "tt",
-    title: "TT - Truyền thông và nâng cao nhận thức",
+    title: "Trăng sáng từ bao giờ?",
     description:
-      "Chương trình TT tập trung vào việc nâng cao nhận thức của cộng đồng về các vấn đề xã hội và môi trường thông qua các chiến dịch truyền thông và sự kiện.",
-    image: "/placeholder.svg?height=600&width=1200",
+      "Trăng sáng từ bao giờ? là chương trình Trung thu thường niên do Tổ chức Giáo dục và Phát triển Cộng đồng (DOP) tại TP Hồ Chí Minh tổ chức. Chương trình này nằm trong khuôn khổ dự án Hành trình nuôi chữ, nhằm mang lại niềm vui và trải nghiệm Tết Trung thu cho trẻ em tại các bản làng vùng sâu, vùng xa, đặc biệt ở khu vực Tây Nguyên.",
+    image: AvatarTT,
     locations: [
       {
         name: "Hà Nội",
@@ -281,7 +286,7 @@ export default function ProgramsPage() {
                           </div>
                           <div>
                             <h4 className="text-2xl font-bold mb-4 text-[#0d3a4e]">
-                              {program.id.toUpperCase()} tại {location.name}
+                              {program.title} tại {location.name}
                             </h4>
                             <p className="text-gray-700 mb-6">{location.description}</p>
                             <Button className="bg-[#1d84b1] hover:bg-[#186b8f]">Xem chi tiết</Button>

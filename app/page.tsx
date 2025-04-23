@@ -14,6 +14,15 @@ import AvatarNDD from "@/asset/ndd/AvatarNdd.jpg"
 import AvatarHTNC from "@/asset/htnc/AvatarHTNC.jpg"
 import AvatarDA from "@/asset/da/AvatarDA.jpg"
 import AvatarTT from "@/asset/tt/AvatarTT.jpg"
+import news_1 from "@/asset/tin_tuc/news_1.jpg"
+import news_2 from "@/asset/tin_tuc/news_2.jpg"
+import news_3 from "@/asset/tin_tuc/news_3.jpg"
+import doi_tac_1 from "@/asset/doi_tac/doi_tac_1.jpg"
+import doi_tac_2 from "@/asset/doi_tac/doi_tac_2.jpg"
+import doi_tac_3 from "@/asset/doi_tac/doi_tac_3.jpg"
+import doi_tac_4 from "@/asset/doi_tac/doi_tac_4.jpg"
+import doi_tac_5 from "@/asset/doi_tac/doi_tac_5.jpg"
+import doi_tac_6 from "@/asset/doi_tac/doi_tac_6.jpg"
 // Slider images
 const sliderImages = [
   {
@@ -81,33 +90,33 @@ const news = [
     id: 1,
     title: "DOP tổ chức sự kiện gây quỹ thành công",
     date: "15/04/2025",
-    image: "/placeholder.svg?height=300&width=500",
+    image: news_1,
     excerpt: "Sự kiện gây quỹ của DOP đã thu hút hơn 200 người tham gia và gây quỹ thành công...",
   },
   {
     id: 2,
     title: "Chương trình CDD mở rộng đến tỉnh mới",
     date: "02/04/2025",
-    image: "/placeholder.svg?height=300&width=500",
+    image: news_2,
     excerpt: "DOP vừa mở rộng chương trình CDD đến tỉnh mới, mang lại cơ hội phát triển cho cộng đồng địa phương...",
   },
   {
     id: 3,
     title: "Đối tác mới đồng hành cùng DOP",
     date: "25/03/2025",
-    image: "/placeholder.svg?height=300&width=500",
+    image: news_3,
     excerpt: "DOP vui mừng thông báo về đối tác mới sẽ đồng hành cùng tổ chức trong các dự án sắp tới...",
   },
 ]
 
 // Partners data
 const partners = [
-  { id: 1, name: "Partner 1", logo: "/placeholder.svg?height=100&width=200" },
-  { id: 2, name: "Partner 2", logo: "/placeholder.svg?height=100&width=200" },
-  { id: 3, name: "Partner 3", logo: "/placeholder.svg?height=100&width=200" },
-  { id: 4, name: "Partner 4", logo: "/placeholder.svg?height=100&width=200" },
-  { id: 5, name: "Partner 5", logo: "/placeholder.svg?height=100&width=200" },
-  { id: 6, name: "Partner 6", logo: "/placeholder.svg?height=100&width=200" },
+  { id: 1, name: "Partner 1", logo: doi_tac_1 },
+  { id: 2, name: "Partner 2", logo: doi_tac_2 },
+  { id: 3, name: "Partner 3", logo: doi_tac_3 },
+  { id: 4, name: "Partner 4", logo: doi_tac_4 },
+  { id: 5, name: "Partner 5", logo: doi_tac_5 },
+  { id: 6, name: "Partner 6", logo: doi_tac_6 },
 ]
 
 export default function Home() {
@@ -267,7 +276,7 @@ export default function Home() {
             {partners.map((partner) => (
               <div
                 key={partner.id}
-                className="bg-white p-4 rounded-lg shadow-sm flex items-center justify-center grayscale hover:grayscale-0 transition-all"
+                className="bg-white p-4 rounded-lg shadow-sm flex items-center justify-center transition-all"
               >
                 <Image
                   src={partner.logo || "/placeholder.svg"}

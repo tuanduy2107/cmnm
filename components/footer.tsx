@@ -47,11 +47,11 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-start">
                 <MapPin className="w-5 h-5 mr-2 text-[#ec4c24] mt-1" />
-                <span className="text-gray-300">Địa chỉ văn phòng DOP, Việt Nam</span>
+                <span className="text-gray-300">Thành phố Hồ Chí Minh</span>
               </div>
               <div className="flex items-center">
                 <Phone className="w-5 h-5 mr-2 text-[#ec4c24]" />
-                <span className="text-gray-300">+84 123 456 789</span>
+                <span className="text-gray-300">098 265 90 52</span>
               </div>
               <div className="flex items-center">
                 <Mail className="w-5 h-5 mr-2 text-[#ec4c24]" />
@@ -70,7 +70,7 @@ export default function Footer() {
                     <span className="sr-only">Facebook</span>
                   </a>
                   <a
-                    href="https://instagram.com"
+                    href="https://www.instagram.com/dream.of.the.poor/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-white hover:text-[#ec4c24] transition-colors"
@@ -79,7 +79,7 @@ export default function Footer() {
                     <span className="sr-only">Instagram</span>
                   </a>
                   <a
-                    href="https://youtube.com"
+                    href="https://www.youtube.com/channel/UCUpCJkgzIl1ja6oDOiQI1Qw"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-white hover:text-[#ec4c24] transition-colors"
